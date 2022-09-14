@@ -97,7 +97,11 @@ IP地址汇总
 
 1.靶机可以直接访问攻击者主机
 
-<img src="https://img1.imgtp.com/2022/09/08/hoFtSULI.png" title="" alt="" data-align="center">2.攻击者主机无法直接访问靶机
+<img src="https://img1.imgtp.com/2022/09/08/hoFtSULI.png" title="" alt="" data-align="center">
+
+
+
+2.攻击者主机无法直接访问靶机
 
 <img src="https://img1.imgtp.com/2022/09/08/U40MUTLh.png" title="" alt="" data-align="center">
 
@@ -106,6 +110,8 @@ IP地址汇总
 <img src="https://img1.imgtp.com/2022/09/08/Qj4GYnCH.png" title="" alt="" data-align="center">
 
 <img src="https://img1.imgtp.com/2022/09/08/YRHSobc2.png" title="" alt="" data-align="center">
+
+<img src="https://img1.imgtp.com/2022/09/14/bxCTxtzU.png" title="" alt="" data-align="center">
 
 4.靶机的所有上过流量必须经过网关
 
@@ -145,9 +151,7 @@ sudo tcpdump -i [希望抓取的网卡名称] -n -w [数据保存为的文件名
 
 ### 问题及解决
 
-安装虚拟机后启动报错
-
-<img src="https://img1.imgtp.com/2022/09/08/4yDbjAYK.png" title="" alt="" data-align="center">
+**1.安装虚拟机后启动报错**<img src="https://img1.imgtp.com/2022/09/08/4yDbjAYK.png" title="" alt="" data-align="center">
 
 原因是虚拟机处理器数量默认为1，过少导致系统无法正常启动
 
@@ -156,6 +160,16 @@ sudo tcpdump -i [希望抓取的网卡名称] -n -w [数据保存为的文件名
 将其改为4即可正常启动
 
 <img src="https://img1.imgtp.com/2022/09/08/OhuzqZGK.png" title="" alt="" data-align="center">
+
+**2.网关ping不通xp系统的IP地址**
+
+<img src="https://img1.imgtp.com/2022/09/14/SEnUFkBS.png" title="" alt="" data-align="center">
+
+原因是xp系统未关闭防火墙，关闭后即可ping通
+
+<img src="https://img1.imgtp.com/2022/09/14/w4jXWbtZ.png" title="" alt="" data-align="center">
+
+<img src="https://img1.imgtp.com/2022/09/14/bxCTxtzU.png" title="" alt="" data-align="center">
 
 ### 参考资料
 
