@@ -146,11 +146,11 @@ pkt = promiscping("172.16.111.121")
   sendp(restorepkt1, count=100, inter=0.2)
   ```
   
-  <img src="IMG/recoverARP1.png" title="" alt="" data-align="center">
+  <img src="img/recoverARP1.png" title="" alt="" data-align="center">
   
   在受害者主机上再次查看ARP缓存
   
-  <img src="IMG/recoverARP2.png" title="" alt="" data-align="center">
+  <img title="" src="img/recoverARP2.png" alt="" data-align="center">
   
   此时网关也能ping通
 
