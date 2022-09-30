@@ -48,7 +48,7 @@ pip3 install scapy[complete]
 
 <img src="img/Installscapy.png" title="" alt="" data-align="center">
 
-### 实验一 检测局域网中的异常中断
+### 实验1 检测局域网中的异常中断
 
 ```bash
 # 在受害者主机上检查网卡的「混杂模式」是否启用
@@ -61,8 +61,6 @@ ip link show eth1
 # 在攻击者主机上开启 scapy
 sudo scapy
 ```
-
-<img src="img/enable%20scapy.png" title="" alt="" data-align="center">
 
 ```bash
 # 在 scapy 的交互式终端输入以下代码回车执行
@@ -134,10 +132,12 @@ pkt = promiscping("172.16.111.121")
   sendp(arpspoofed)
   ```
   
-  <img src="img/victimARP.png" title="" alt="" data-align="center">
+  ![](img/ARPattack.png)
   
-  网关的 MAC 地址已被「替换」为攻击者主机的 MAC 地址
+  <img src="img/victimARP.png" title="" alt="" data-align="center">
 
+  网关的 MAC 地址已被「替换」为攻击者主机的 MAC 地址
+  
 - **恢复受害者主机的ARP缓存记录**
   
   ```bash
